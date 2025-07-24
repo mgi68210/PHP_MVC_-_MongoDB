@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="css/style.css">
+
   <meta charset="UTF-8">
   <title>Détail du produit</title>
 </head>

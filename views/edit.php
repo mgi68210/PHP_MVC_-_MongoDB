@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Modifier un produit</title>
 </head>
 <body>
