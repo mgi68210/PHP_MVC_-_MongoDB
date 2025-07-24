@@ -14,9 +14,8 @@ class ProductController
 
     public function home(){
 
-        $produits= $this->productRepository->getAll();
-
-        require_once __DIR__.'/../views/home.php';
+    $produits = $this->productRepository->getAll();
+    require_once __DIR__.'/../views/home.php';
     }
 
     public function show(string $id){

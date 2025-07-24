@@ -15,7 +15,7 @@ switch ($action) {
         break;
     case 'index':
         $ProduitController->home();
-        break;
+        break; 
     case 'store':
         $ProduitController->store();
         break;
@@ -29,6 +29,6 @@ switch ($action) {
         $ProduitController->delete($id);
         break;
     default:
-        $taskController->forbidden();
+        $ProduitController->forbidden();
         break;
 }

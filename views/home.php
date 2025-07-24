@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    
-    <title>Liste des produits</title>
+  <meta charset="UTF-8">
+  <title>Liste des produits</title>
+  <script src="js/delete.js"></script>
 </head>
 <body>
 
-<h1>Produits</h1>
+  <h1>Liste des produits</h1>
 
-<a href="?action=create"> Ajout d'un produit</a>
+  <p><a href="?action=create">Ajouter un produit</a></p>
 
-    </script>
-
-<table border="1" cellpadding="8" cellspacing="0">
-    <tr>
+  <table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+      <tr>
         <th>Nom</th>
         <th>Quantité</th>
-        <th>Prix</th>
+        <th>Prix (€)</th>
         <th>Actions</th>
-    </tr>
-    <?php foreach ($produits as $produit): ?>
-        <tr>
-            <td><?= htmlspecialchars($produit->getNom()) ?></td>
+      </tr>
+    </thead>
+    <tbody>
+      <?php if (!empty($produits)): ?>
+        <?php foreach ($produits as $produit): ?>
+          <tr>
+            <td><?= $produit->getNom() ?></td>
             <td><?= $produit->getQuantite() ?></td>
             <td><?= $produit->getPrix() ?></td>
             <td>
-                <a href="?action=edit&id=<?= $produit->getId() ?>"> Modifier</a>
-                <a href="?action=delete&id=<?= $produit->getId() ?>" onclick="return confirm('Supprimer ce produit ?')">Supprimer</a>
-                <a href="?action=show&id=<?= $produit->getId() ?>"> Voir</a>
-
+              <a href="?action=edit&id=<?= $produit->getId() ?>">Modifier</a> |
+              <a href="?action=delete&id=<?= $produit->getId() ?>" onclick="return confirmerSuppression();">Supprimer</a> |
+              <a href="?action=show&id=<?= $produit->getId() ?>">Voir</a>
             </td>
+          </tr>
+        <?php endforeach; ?>
+      <?php else: ?>
+        <tr>
+          <td colspan="4">Aucun produit trouvé.</td>
         </tr>
-    <?php endforeach; ?>
-</table>
+      <?php endif; ?>
+    </tbody>
+  </table>
 
 </body>
 </html>
