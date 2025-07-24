@@ -5,6 +5,8 @@
 
   <meta charset="UTF-8">
   <title>Détail du produit</title>
+    <script src="js/delete.js"></script>
+
 </head>
 <body>
 
@@ -16,7 +18,7 @@
 
   <p>
     <a href="?action=edit&id=<?= $produit->getId() ?>">Modifier</a> |
-    <a href="?action=delete&id=<?= $produit->getId() ?>" class="delete-link">Supprimer</a> |
+    <a href="?action=delete&id=<?= $produit->getId() ?>" onclick="return confirmerSuppression();">Supprimer</a> |
     <a href="?action=index">Retour à la liste</a>
   </p>
 
