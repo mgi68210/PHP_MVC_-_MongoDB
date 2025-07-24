@@ -30,7 +30,7 @@
             <td>
               <a href="?action=edit&id=<?= $produit->getId() ?>">Modifier</a> |
               <a href="?action=delete&id=<?= $produit->getId() ?>" onclick="return confirmerSuppression();">Supprimer</a> |
-              <a href="?action=show&id=<?= $produit->getId() ?>">Voir</a>
+              <a href="?action=view&id=<?= $produit->getId() ?>">Voir</a>
             </td>
           </tr>
         <?php endforeach; ?>
