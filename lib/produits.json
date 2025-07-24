@@ -1,0 +1,78 @@
+[
+  {
+    "nom": "Stylo",
+    "quantité": 150,
+    "prix": 2.5
+  },
+  {
+    "nom": "Cahier",
+    "quantité": 80,
+    "prix": 3.0
+  },
+  {
+    "nom": "Crayon",
+    "quantité": 200,
+    "prix": 1.2
+  },
+  {
+    "nom": "Trousse",
+    "quantité": 20,
+    "prix": 5.99
+  },
+  {
+    "nom": "Fusain",
+    "quantité": 35,
+    "prix": 2.6
+  },
+  {
+    "nom": "Feutre",
+    "quantité": 90,
+    "prix": 1.75
+  },
+  {
+    "nom": "Gomme",
+    "quantité": 120,
+    "prix": 0.99
+  },
+  {
+    "nom": "Colle",
+    "quantité": 60,
+    "prix": 1.5
+  },
+  {
+    "nom": "Règle",
+    "quantité": 45,
+    "prix": 2.2
+  },
+  {
+    "nom": "Pochette",
+    "quantité": 100,
+    "prix": 0.5
+  },
+  {
+    "nom": "Compas",
+    "quantité": 25,
+    "prix": 3.9
+  },
+  {
+    "nom": "Équerre",
+    "quantité": 40,
+    "prix": 2.8
+  },
+  {
+    "nom": "Marqueur",
+    "quantité": 75,
+    "prix": 1.95
+  },
+  {
+    "nom": "Cartable",
+    "quantité": 10,
+    "prix": 24.99
+  },
+  {
+    "nom": "Papier millimétré",
+    "quantité": 30,
+    "prix": 1.1
+  }
+]
+
